@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
-  <title id="title">Haru Haru placeholder artwork</title><desc id="desc">Abstract charcoal placeholder with gold light.</desc>
-  <defs><radialGradient id="g"><stop stop-color="#9d7937"/><stop offset=".48" stop-color="#302715"/><stop offset="1" stop-color="#08090b"/></radialGradient></defs>
-  <rect width="1200" height="1200" fill="#08090b"/><circle cx="600" cy="540" r="470" fill="url(#g)" opacity=".72"/><path d="M130 760c220-180 660-180 940 0" fill="none" stroke="#e8c876" stroke-opacity=".42" stroke-width="3"/>
-  <g fill="#f7e8b5"><circle cx="228" cy="266" r="3"/><circle cx="917" cy="217" r="5"/><circle cx="1004" cy="490" r="3"/><circle cx="360" cy="862" r="4"/></g>
-  <text x="600" y="510" fill="#fff9e8" font-family="Georgia,serif" font-size="92" text-anchor="middle">Haru Haru</text><text x="600" y="598" fill="#e8c876" font-family="Arial,sans-serif" font-size="24" letter-spacing="10" text-anchor="middle">BIGBANG</text><text x="600" y="1060" fill="#aaa69c" font-family="Arial,sans-serif" font-size="20" letter-spacing="6" text-anchor="middle">PLACEHOLDER ART · REPLACE LATER</text>
-</svg>

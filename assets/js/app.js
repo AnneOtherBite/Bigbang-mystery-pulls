@@ -125,7 +125,8 @@ function populateSong() {
   elements.badge.textContent = rarityLabels[song.rarity];
   elements.badge.setAttribute("aria-label", song.rarity);
   elements.artwork.src = new URL(song.image, import.meta.url).href;
-  elements.artwork.alt = `${song.title} placeholder artwork. Replace with the official album artwork later.`;
+  elements.artwork.alt = `BIGBANG group photo for ${song.title}.`;
+  elements.artwork.style.objectPosition = song.position || "center";
   elements.spotify.href = song.spotify;
   elements.youtube.href = song.youtube;
 }

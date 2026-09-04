@@ -12,18 +12,18 @@ node tests/serve.mjs
 
 Then visit `http://localhost:4173/still-life/`.
 
-## Replace the placeholder artwork
+## Artwork
 
-The six artwork files live in `assets/artwork/`:
+The six final artwork files live in `assets/artwork/`:
 
-- `haru-haru-placeholder.svg`
-- `lies-placeholder.svg`
-- `still-life-placeholder.svg`
-- `biiig-placeholder.svg`
-- `bang-bang-bang-placeholder.svg`
-- `fantastic-baby-placeholder.svg`
+- `haru-haru.jpg`
+- `lies.jpg`
+- `still-life.jpg`
+- `biiig.jpg`
+- `bang-bang-bang.jpg`
+- `fantastic-baby.jpg`
 
-The easiest update is to add the final square images to that folder and change only the matching `image` line in `assets/js/songs.js`. Keep images square and optimized for the web (WebP or JPEG at roughly 1200 × 1200 is plenty).
+Per-song image paths and crop positions are configured in `assets/js/songs.js`.
 
 ## GitHub Pages
 
