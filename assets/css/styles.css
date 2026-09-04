@@ -449,7 +449,6 @@ a { color: inherit; }
 
 .event-date { margin: 0.35rem 0 1.2rem; color: #bbb8b0; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .thank-you { max-width: 30rem; margin: 0 auto; color: #d3d0c8; font-family: Georgia, "Times New Roman", serif; font-size: 1rem; line-height: 1.65; }
-.thank-you span { display: block; margin-bottom: 0.2rem; color: var(--gold-pale); font-style: italic; }
 .replay-card p,
 .social-card p { margin: 0.7rem 0 1.2rem; color: #bdbab4; font-size: 0.9rem; line-height: 1.55; }
 
@@ -462,6 +461,7 @@ a { color: inherit; }
 .social-actions { display: grid; gap: 0.75rem; margin-top: 1.2rem; }
 .button-share { color: #f7f3ea; border-color: rgba(230, 198, 111, 0.36); background: transparent; }
 .button-instagram { color: #1b1012; background: linear-gradient(135deg, #f3b4a9, #e899a9); }
+.button-discord { color: #f7f6ff; border-color: rgba(175, 181, 238, 0.34); background: linear-gradient(135deg, #666ca9, #50578e); box-shadow: 0 0.8rem 2rem rgba(83, 90, 153, 0.14); }
 .share-status { min-height: 1.25rem; margin: 0.7rem 0 0 !important; color: var(--gold-pale) !important; font-size: 0.78rem !important; }
 .footer-note { margin: 1.5rem 0 0; color: #77756f; font-family: Georgia, "Times New Roman", serif; font-size: 0.82rem; font-style: italic; text-align: center; }
 
@@ -554,6 +554,11 @@ a { color: inherit; }
 @media (min-width: 35rem) {
   .social-actions { grid-template-columns: 1fr 1fr; }
   .route-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 23rem) {
+  .social-actions { grid-template-columns: 1fr 1fr; }
+  .button-share { grid-column: 1 / -1; }
 }
 
 @media (prefers-reduced-motion: reduce) {

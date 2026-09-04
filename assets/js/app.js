@@ -57,7 +57,7 @@ document.body.innerHTML = `
         <p class="section-kicker">XX:COSMOS TOUR</p>
         <h2 id="keepsake-title">Oakland Coliseum</h2>
         <p class="event-date">September 5, 2026</p>
-        <p class="thank-you"><span>From one VIP to another ♡</span>Thanks for being part of my concert day. I hope this little mystery pull gives you something fun to remember the night by.</p>
+        <p class="thank-you">Thanks for being part of my concert experience! I hope this mystery pull gives you something fun to remember the amazing night by.</p>
       </section>
 
       <section class="replay-card" aria-labelledby="replay-title">
@@ -77,6 +77,10 @@ document.body.innerHTML = `
           <a class="button button-instagram" href="https://www.instagram.com/howtosoju" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
             Instagram
+          </a>
+          <a class="button button-discord" href="https://discord.gg/TTBfCCkQaA" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.1 7.2A11.8 11.8 0 0 1 12 6.1c1.8 0 3.4.4 4.9 1.1 1.1 1.6 1.8 3.5 2 5.6a9.7 9.7 0 0 1-3.2 2.3l-.8-1.1c.5-.2 1-.5 1.4-.8-2.7 1.3-5.9 1.3-8.6 0 .4.3.9.6 1.4.8l-.8 1.1a9.7 9.7 0 0 1-3.2-2.3c.2-2.1.9-4 2-5.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9.2" cy="11.4" r="1" fill="currentColor"/><circle cx="14.8" cy="11.4" r="1" fill="currentColor"/></svg>
+            Discord
           </a>
           <button class="button button-share" type="button" data-share>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="19" r="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m8.2 10.9 7.6-4.7M8.2 13.1l7.6 4.7" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
