@@ -9,10 +9,10 @@ if (!song) {
 }
 
 document.body.innerHTML = `
-  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 
   <section class="loading-screen" data-loading aria-live="polite" aria-label="Preparing your mystery pull">
-    <p class="tour-mark" aria-label="XX COSMO">XX <span>COSMO</span></p>
+    <p class="tour-mark" aria-label="XX:COSMOS">XX:<span>COSMOS</span></p>
     <div class="orbit-loader" aria-hidden="true">
       <span class="orbit-core"></span>
       <span class="orbit-star">✦</span>
@@ -26,7 +26,7 @@ document.body.innerHTML = `
 
   <main class="reveal-shell" data-reveal hidden>
     <header class="reveal-header">
-      <p class="tour-mark" aria-label="XX COSMO">XX <span>COSMO</span></p>
+      <p class="tour-mark" aria-label="XX:COSMOS">XX:<span>COSMOS</span></p>
     </header>
 
     <article class="reveal-card" aria-live="polite">
@@ -54,7 +54,7 @@ document.body.innerHTML = `
       </div>
 
       <section class="keepsake" aria-labelledby="keepsake-title">
-        <p class="section-kicker">XX COSMO TOUR</p>
+        <p class="section-kicker">XX:COSMOS TOUR</p>
         <h2 id="keepsake-title">Oakland Coliseum</h2>
         <p class="event-date">September 5, 2026</p>
         <p class="thank-you"><span>From one VIP to another ♡</span>Thanks for being part of my concert day. I hope this little mystery pull gives you something fun to remember the night by.</p>
@@ -73,7 +73,6 @@ document.body.innerHTML = `
       <section class="social-card" aria-labelledby="social-title">
         <p class="section-kicker">Keep the night going</p>
         <h2 id="social-title">LET'S BE FRIENDS ♡</h2>
-        <p>We met at XX COSMO — come say hi!</p>
         <div class="social-actions">
           <a class="button button-instagram" href="https://www.instagram.com/howtosoju" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
@@ -109,9 +108,9 @@ const elements = {
 };
 
 const rarityLabels = {
-  common: "✦ COMMON PULL ✦",
-  rare: "✦ RARE PULL ✦",
-  legendary: "♛ LEGENDARY PULL ✦"
+  common: "COMMON",
+  rare: "RARE",
+  legendary: "LEGENDARY"
 };
 
 function populateSong() {
@@ -120,7 +119,7 @@ function populateSong() {
   document.title = `${song.title} · BIGBANG Mystery Pull`;
   elements.title.textContent = song.title;
   elements.badge.textContent = rarityLabels[song.rarity];
-  elements.badge.setAttribute("aria-label", `${song.rarity} pull`);
+  elements.badge.setAttribute("aria-label", song.rarity);
   elements.artwork.src = new URL(song.image, import.meta.url).href;
   elements.artwork.alt = `${song.title} placeholder artwork. Replace with the official album artwork later.`;
   elements.spotify.href = song.spotify;
@@ -151,7 +150,7 @@ function playReveal() {
 async function sharePull() {
   const shareData = {
     title: `${song.title} · BIGBANG Mystery Pull`,
-    text: `I pulled ${song.title} (${song.rarity.toUpperCase()}) at BIGBANG's XX COSMO Tour in Oakland!`,
+    text: `I pulled ${song.title} (${song.rarity.toUpperCase()}) at BIGBANG's XX:COSMOS Tour in Oakland!`,
     url: window.location.href
   };
 

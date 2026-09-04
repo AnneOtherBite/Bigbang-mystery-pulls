@@ -1,6 +1,6 @@
 # BIGBANG Mystery Pulls
 
-A mobile-first GitHub Pages experience for NFC mystery song keychains shared at BIGBANG's XX COSMO Tour in Oakland on September 5, 2026.
+A mobile-first GitHub Pages experience for NFC mystery song keychains shared at BIGBANG's XX:COSMOS Tour in Oakland on September 5, 2026.
 
 ## Preview locally
 
