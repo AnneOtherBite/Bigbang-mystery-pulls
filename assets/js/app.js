@@ -96,7 +96,7 @@ document.body.innerHTML = `
 `;
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const loadingDelay = reduceMotion ? 250 : 2300;
+const loadingHoldDuration = 3500;
 const loadingFadeDuration = reduceMotion ? 0 : 700;
 
 const elements = {
@@ -150,7 +150,7 @@ function playReveal() {
   elements.loading.hidden = false;
   elements.loading.classList.remove("is-leaving");
   window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
-  window.setTimeout(showReveal, loadingDelay);
+  window.setTimeout(showReveal, loadingHoldDuration);
 }
 
 async function sharePull() {
@@ -192,4 +192,4 @@ async function sharePull() {
 populateSong();
 elements.replay.addEventListener("click", playReveal);
 elements.share.addEventListener("click", sharePull);
-window.setTimeout(showReveal, loadingDelay);
+window.setTimeout(showReveal, loadingHoldDuration);
