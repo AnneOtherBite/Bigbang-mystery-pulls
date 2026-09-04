@@ -157,7 +157,7 @@ a { color: inherit; }
     radial-gradient(circle at 50% 49%, rgba(230, 198, 111, 0.12), transparent 14rem),
     radial-gradient(circle at 25% 78%, rgba(106, 56, 143, 0.12), transparent 13rem),
     rgba(8, 9, 11, 0.92);
-  transition: opacity 240ms ease, visibility 240ms ease;
+  transition: opacity 700ms ease, visibility 700ms ease;
 }
 
 .loading-screen.is-leaving { opacity: 0; visibility: hidden; }

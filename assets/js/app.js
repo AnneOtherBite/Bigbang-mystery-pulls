@@ -96,7 +96,8 @@ document.body.innerHTML = `
 `;
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const loadingDelay = reduceMotion ? 250 : 1750;
+const loadingDelay = reduceMotion ? 250 : 2300;
+const loadingFadeDuration = reduceMotion ? 0 : 700;
 
 const elements = {
   loading: document.querySelector("[data-loading]"),
@@ -140,7 +141,7 @@ function showReveal() {
     void elements.reveal.offsetWidth;
     elements.reveal.classList.add("is-revealing");
     window.scrollTo({ top: 0, behavior: "auto" });
-  }, reduceMotion ? 0 : 240);
+  }, loadingFadeDuration);
 }
 
 function playReveal() {
